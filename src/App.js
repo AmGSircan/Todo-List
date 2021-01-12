@@ -20,7 +20,7 @@ class App extends React.Component{
   }
 
   componentDidMount(){
-    let items = JSON.parse(localStorage.getItem('tasks'));
+    let items = JSON.parse(localStorage.getItem('tasks')) || [];
     this.setState({
       items: items
     })
